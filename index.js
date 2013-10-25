@@ -2,7 +2,7 @@ var http = require('http'),
 	fs = require('fs');
 
 var pageContent = fs.readFileSync('index.html', {'encoding': 'utf8'}).split(''),
-	intervalTime = 5,
+	intervalTime = 15,
 	timeoutTime = pageContent.length * intervalTime;
 
 http.createServer(function(req, res) {
