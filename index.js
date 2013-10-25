@@ -26,4 +26,4 @@ http.createServer(function(req, res) {
 		clearInterval(intervalId);
 		res.end();
 	}, timeoutTime);
-}).listen(3000);
+}).listen(process.env.PORT || 3000);
